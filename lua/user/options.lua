@@ -5,6 +5,7 @@ local options = {
     conceallevel = 0,          -- so that `` is visible in markdown file
     fileencoding = "utf-8",    -- the encoding written to a file
     swapfile = false,          -- creates a swapfile
+	termguicolors = true,      -- set term gui colors (most terminals support this)
     updatetime = 300,          -- faster completion (4000ms default)
     cursorline = true,         -- highlight the cursor line
     number = true,             -- set numbered lines
