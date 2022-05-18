@@ -78,6 +78,9 @@ return packer.startup(function(use)
 	}
 	use "p00f/nvim-ts-rainbow"
 
+	-- autopairs
+	use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Pu this at the end after all plugins
 	if PACKER_BOOTSTRAP then
