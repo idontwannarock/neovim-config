@@ -17,7 +17,14 @@ git clone git@github.com:idontwannarock/neovim-config.git ~/.config/nvim
 
 Windows
 
-```cmd
+```bat
 git clone git@github.com:idontwannarock/neovim-config.git ~\AppData\Local\nvim
 ```
+
+**IMPORTANT** Windows environment requires additional setup in advance.
+
+Please reference following docs to setup properly.
+
+- [Treesitter Windows support](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)
+- [How run clang from command line on Windows?](https://stackoverflow.com/a/42540457/7605040)
 
