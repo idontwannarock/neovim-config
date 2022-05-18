@@ -50,22 +50,22 @@ return packer.startup(function(use)
 	use "lunarvim/darkplus.nvim"
 
 	-- cmp plugins
-	use "hrsh7th/nvim-cmp" -- The completion plugin
-	use "hrsh7th/cmp-buffer" -- Buffer completions
-	use "hrsh7th/cmp-path" -- Path completions
-	use "hrsh7th/cmp-cmdline" -- cmdline completions
+	use "hrsh7th/nvim-cmp"         -- The completion plugin
+	use "hrsh7th/cmp-buffer"       -- Buffer completions
+	use "hrsh7th/cmp-path"         -- Path completions
+	use "hrsh7th/cmp-cmdline"      -- cmdline completions
 	use "saadparwaiz1/cmp_luasnip" -- Snippet completions
 	use "hrsh7th/cmp-nvim-lsp"
 	use "hrsh7th/cmp-nvim-lua"
 
 	-- snippets
-	use "L3MON4D3/LuaSnip" -- Snippet engine
+	use "L3MON4D3/LuaSnip"             -- Snippet engine
 	use "rafamadriz/friendly-snippets" -- A bunch of snippets to use
 
 	-- LSP
-	use "neovim/nvim-lspconfig" -- enable LSP
+	use "neovim/nvim-lspconfig"           -- enable LSP
 	use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-	use "tamago324/nlsp-settings.nvim" -- language server settings defined in json form
+	use "tamago324/nlsp-settings.nvim"    -- language server settings defined in json form
 
 	-- Telescope
 	use "nvim-telescope/telescope.nvim"
@@ -76,6 +76,7 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 	}
+	use "p00f/nvim-ts-rainbow"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Pu this at the end after all plugins
