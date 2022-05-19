@@ -44,6 +44,7 @@ return packer.startup(function(use)
 	use "wbthomason/packer.nvim" -- Have packer manage itself
 	use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
 	use "nvim-lua/plenary.nvim"  -- Useful lua functions used by lots of plugins
+	use "numToStr/Comment.nvim"  -- Easily comment stuff
 
 	-- color schemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -77,9 +78,13 @@ return packer.startup(function(use)
 		run = ":TSUpdate",
 	}
 	use "p00f/nvim-ts-rainbow"
+	use "JoosepAlviste/nvim-ts-context-commentstring"
 
 	-- autopairs
 	use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+
+	-- Git
+	use "lewis6991/gitsigns.nvim"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Pu this at the end after all plugins
