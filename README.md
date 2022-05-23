@@ -15,6 +15,16 @@ Unix
 git clone git@github.com:idontwannarock/neovim-config.git ~/.config/nvim
 ```
 
+**IMPORTANT** Ubuntu environment requires additional setup in advance.
+
+Please reference following docs to setup properly.
+
+- [sudo apt-get install libstdc++](https://askubuntu.com/a/726789)
+- [Neovim Installation on Ubuntu](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
+- [Neovim Unstable](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable)
+
+> You need to explicitly install Neovim 0.7.0+ version as current stable version for Ubuntu is 0.6.0.
+
 Windows
 
 ```bat
