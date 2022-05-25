@@ -47,6 +47,7 @@ return packer.startup(function(use)
 	use "numToStr/Comment.nvim"  -- Easily comment stuff
 	use "kyazdani42/nvim-web-devicons"
 
+
 	-- color schemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 	use "lunarvim/darkplus.nvim"
@@ -89,6 +90,10 @@ return packer.startup(function(use)
 
 	-- Nvimtree
 	use "kyazdani42/nvim-tree.lua"
+
+	-- Bufferline
+	use "akinsho/bufferline.nvim"
+	use "moll/vim-bbye" -- close buffer without closing neovim
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Pu this at the end after all plugins
