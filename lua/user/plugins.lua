@@ -96,6 +96,9 @@ return packer.startup(function(use)
 	use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye" -- close buffer without closing neovim
 
+	-- Toggleterm
+	use "akinsho/toggleterm.nvim"
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Pu this at the end after all plugins
 	if PACKER_BOOTSTRAP then
