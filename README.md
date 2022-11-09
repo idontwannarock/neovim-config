@@ -9,11 +9,24 @@ This NeoVim settings repo is for personal use, but you are welcome to use and fr
 
 ## TL;DR
 
-Unix
+### Unix
 
 ```bash
 git clone git@github.com:idontwannarock/neovim-config.git ~/.config/nvim
 ```
+
+#### Pre-requisite
+
+- nodejs
+- cc
+- rg
+
+```bash
+sudo apt install nodejs clang ripgrep
+npm install -g neovim
+```
+
+#### Reference
 
 **IMPORTANT** Ubuntu environment requires additional setup in advance.
 
@@ -25,11 +38,26 @@ Please reference following docs to setup properly.
 
 > You need to explicitly install Neovim 0.7.0+ version as current stable version for Ubuntu is 0.6.0.
 
-Windows
+### Windows
 
 ```bat
 git clone git@github.com:idontwannarock/neovim-config.git ~\AppData\Local\nvim
 ```
+
+#### Pre-requisite
+
+- llvm
+- nodejs / npm
+- wget
+- gzip
+- rg
+
+```powershell
+choco install llvm nodejs-lts wget gzip ripgrep -y
+clang --version
+```
+
+#### Reference
 
 **IMPORTANT** Windows environment requires additional setup in advance.
 
