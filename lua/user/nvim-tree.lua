@@ -25,10 +25,6 @@ nvim_tree.setup {
   open_on_tab = false,
   hijack_cursor = false,
   update_cwd = true,
-  update_to_buf_dir = {
-    enable = true,
-    auto_open = true,
-  },
   diagnostics = {
     enable = true,
     icons = {
@@ -50,10 +46,8 @@ nvim_tree.setup {
   },
   view = {
     width = 30,
-    height = 30,
     hide_root_folder = false,
     side = "left",
-    auto_resize = true,
     mappings = {
       custom_only = false,
       list = {
@@ -66,12 +60,13 @@ nvim_tree.setup {
     relativenumber = false,
   },
   actions = {
-	open_file = {
-	  quit_on_open = false,
-	  window_picker = {
-		enable = true,
-	  },
-	},
+    open_file = {
+      resize_window = true,
+      quit_on_open = false,
+      window_picker = {
+	enable = true,
+      },
+    },
   },
   renderer = {
 	icons = {
@@ -99,6 +94,11 @@ nvim_tree.setup {
   },
 }
 
+nvim_tree.hijack_directories = {
+  enable = true,
+  auto_open = false
+}
+
 nvim_tree_git_hl = 1
 nvim_tree_root_folder_modifier = ":t"
 nvim_tree_show_icons = {
@@ -108,4 +108,3 @@ nvim_tree_show_icons = {
 	folder_arrows = 1,
 	tree_width = 30,
 }
-
