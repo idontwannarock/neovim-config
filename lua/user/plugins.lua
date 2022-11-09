@@ -78,7 +78,10 @@ return packer.startup(function(use)
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
+		run = function()
+			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+			ts_update()
+		end,
 	}
 	use "p00f/nvim-ts-rainbow"
 	use "JoosepAlviste/nvim-ts-context-commentstring"
